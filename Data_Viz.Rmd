@@ -24,11 +24,11 @@ library(tidyverse)
 ```
 
 ```{r,echo=FALSE, message=FALSE}
-setwd("C:/Users/cleon/OneDrive/Data Visualization")
+setwd("C:/Users/cleon/OneDrive/Data Visualization/Data_Viz_Practice")
 ```
 
 ```{r, echo=FALSE, message=FALSE}
-df <- read.csv("C:/Users/cleon/OneDrive/Data Visualization/data/hate-crimes/hate_crimes.csv")
+df <- read.csv("../data/hate-crimes/hate_crimes.csv")
 ```
 
 
