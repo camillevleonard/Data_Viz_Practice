@@ -1,0 +1,75 @@
+---
+title: "Data Visualization Demo"
+date: "4/9/2021"
+output: 
+  html_notebook:
+    toc: TRUE 
+    toc_depth: 3
+    toc_float: 
+      collapsed: true 
+      smooth_scroll: false 
+    number_sections: false 
+    fig_caption: true 
+    code_folding: hide  
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, echo=FALSE, message=FALSE}
+library(ggplot2)
+library(tidyverse)
+```
+
+```{r,echo=FALSE, message=FALSE}
+setwd("C:/Users/cleon/OneDrive/Data Visualization")
+```
+
+```{r, echo=FALSE, message=FALSE}
+df <- read.csv("C:/Users/cleon/OneDrive/Data Visualization/data/hate-crimes/hate_crimes.csv")
+```
+
+
+# Introduction
+
+As a fun practice I thought I would create various visualizations, from basic to advanced, as practice and a good refresher example to refer back to. My intent is to first create these visualizations using the ggplot package and then try to replicate them with other packages. 
+
+# Scatterplot {.tabset}
+
+**Method Reflection**
+
+## GGPlot 
+
+```{r}
+gg_scatter <-  ggplot(df, aes(x=median_household_income, y = avg_hatecrimes_per_100k_fbi)) + 
+                geom_point()
+gg_scatter
+```
+
+
+## Plotly 
+
+## Matplotlib 
+
+# Bar Chart {.tabset}
+
+## GGPlot
+
+## Plotly 
+
+## Matplotlib 
+
+# Histogram {.tabset}
+
+## GGPlot
+
+## Plotly 
+
+## Matplotlib 
+
+# Resources
+
+* GGPlot Cheat Sheet 
+* https://github.com/fivethirtyeight/data 
